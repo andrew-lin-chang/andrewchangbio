@@ -8,10 +8,10 @@ export default function Header() {
         <h2 className='text-white text-xs'>ECE student at UT Austin</h2>
       </div>
 
-      <div className="flex gap-2">
-        <Link href="/about" className="text-white">About</Link>
-        <Link href="/projects" className="text-white">Projects</Link>
-        <Link href="/blog" className="text-white">Blog</Link>
+      <div className="flex gap-4">
+        <Link href="/about" className="text-gray-500 hover:text-white">About</Link>
+        <Link href="/projects" className="text-gray-500 hover:text-white">Projects</Link>
+        <Link href="/blog" className="text-gray-500 hover:text-white">Blog</Link>
       </div>
     </div>
   )
