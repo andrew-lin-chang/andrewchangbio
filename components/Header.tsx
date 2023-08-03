@@ -4,8 +4,10 @@ export default function Header() {
   return (
     <div className="flex items-center mt-4 justify-between sticky">
       <div>
-        <h1 className='text-white text-3xl font-bold'>Andrew Chang</h1>
-        <h2 className='text-white text-xs'>ECE student at UT Austin</h2>
+        <Link href="/">
+          <h1 className='text-white text-xl font-bold'>Andrew Chang</h1>
+        </Link>
+        <p className='text-gray-500 text-xs'>ECE student at UT Austin</p>
       </div>
 
       <div className="flex gap-4">
