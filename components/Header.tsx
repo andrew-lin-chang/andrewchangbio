@@ -11,9 +11,9 @@ export default function Header() {
       </div>
 
       <div className="flex gap-4">
-        <Link href="/about" className="text-gray-500 hover:text-white">About</Link>
+        <Link href="/resume" className="text-gray-500 hover:text-white">Resume</Link>
         <Link href="/projects" className="text-gray-500 hover:text-white">Projects</Link>
-        <Link href="/blog" className="text-gray-500 hover:text-white">Blog</Link>
+        <Link href="/thoughts" className="text-gray-500 hover:text-white">Thoughts</Link>
       </div>
     </div>
   )
