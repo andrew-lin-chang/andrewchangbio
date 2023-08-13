@@ -32,7 +32,7 @@ export default function Projects() {
   const projects = posts.filter(post => post.meta.type === "project")
 
   return (
-    <div className="my-6">
+    <div>
       <h1 className="font-bold text-4xl">Projects</h1>
       <p className="">
         Things I've made in class or in my free time :)
