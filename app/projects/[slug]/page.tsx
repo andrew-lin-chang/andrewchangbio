@@ -33,7 +33,7 @@ export default function Post({ params }: any) {
   const props = getPost(params);
 
   return (
-    <div className="text-white">
+    <div className="">
       <MDXRemote source={props.content} />
     </div>
   );

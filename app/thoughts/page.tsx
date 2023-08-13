@@ -1,7 +1,7 @@
 
 export default function Thoughts() {
   return (
-    <div className="text-white">
+    <div className="">
       Head empty, no thoughts
     </div>
   )

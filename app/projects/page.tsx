@@ -33,8 +33,8 @@ export default function Projects() {
 
   return (
     <div className="my-6">
-      <h1 className="text-white font-bold text-4xl">Projects</h1>
-      <p className="text-gray-500 ">
+      <h1 className="font-bold text-4xl">Projects</h1>
+      <p className="">
         Things I've made in class or in my free time :)
       </p>
       <div className="grid grid-cols-1 gap-4 mt-6">
