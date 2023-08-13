@@ -7,6 +7,7 @@ export default function Card({title, description, img, date}: Project): React.Re
         <div>
           <h1 className="text-white text-lg">{title}</h1>
           <p className="text-gray-500 text-sm">{description}</p>
+          <p className="text-gray-500 text-sm">{date}</p>
         </div>
       </div>
     </div>
