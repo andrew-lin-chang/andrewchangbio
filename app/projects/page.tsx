@@ -10,6 +10,8 @@ export interface Project {
   description: string;
   imgSrc: string;
   date: string;
+  repo?: string;
+  visit?: string;
 }
 
 export default function Projects() {
@@ -29,20 +31,20 @@ export default function Projects() {
     };
   });
 
-  const projects = posts.filter(post => post.meta.type === "project")
+  const projects = posts.filter((post) => post.meta.type === "project");
 
   return (
     <div>
       <h1 className="font-bold text-4xl">Projects</h1>
-      <p className="">
-        Things I've made in class or in my free time :)
-      </p>
+      <p className="">Things I've made in class or in my free time :)</p>
       <div className="grid grid-cols-1 gap-4 mt-6">
-        {projects.map(project => (
-          <Link href={'/projects/' + project.slug} key={project.slug}>
-            <Card title={project.meta.title} description={project.meta.description} imgSrc={project.meta.imgSrc} date={project.meta.date}/>
-          </Link>
-        ))}
+        {projects.map((project) => {
+          return (
+            // <Link href={"/projects/" + project.slug} key={project.slug}>
+              <Card title={""} description={""} imgSrc={""} date={""} {...project.meta} />
+            // </Link>
+          );
+        })}
       </div>
     </div>
   );

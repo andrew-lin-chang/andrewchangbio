@@ -2,6 +2,7 @@ import Image from "next/image";
 import wetcat from "public/images/wetcat.png";
 import TechStack from "@/components/TechStack";
 import { LinkedIn } from "@/components/Icons";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -24,26 +25,28 @@ export default function Home() {
         />
       </div>
 
-      <TechStack/>
+      <TechStack />
 
-      <div className="my-6">
-        <div className="my-4">
-          <h1 className="font-bold text-3xl">About</h1>
-          <p className="mt-4">
+      <div className="mt-8 flex flex-col gap-8">
+        <section>
+          <h1 className="font-bold text-3xl mb-4">About</h1>
+          <p>
             I'm an Electrical and Computer Engineering student at the University
             of Texas at Austin. I'm particularly interested in full-stack
-            development, automation, IoT, and the cloud. You can probably find me
-            in the quiet section of the library trying to learn something new!
+            development, automation, IoT, and the cloud. You can probably find
+            me in the quiet section of the library trying to learn something
+            new!
           </p>
-        </div>
+        </section>
 
-        <div className="my-4">
-          <h1 className="font-bold text-3xl">Experience</h1>
-        </div>
+        <section>
+          <h1 className="font-bold text-3xl mb-4">Experience</h1>
+          <Timeline />
+        </section>
 
-        <div className="my-4">
-          <h1 className="font-bold text-3xl">Contact Me</h1>
-          <div className="mt-4 flex flex-col md:flex-row gap-6 w-full">
+        <section>
+          <h1 className="font-bold text-3xl mb-4">Contact Me</h1>
+          <div className="flex flex-col md:flex-row gap-6 w-full">
             <button className="border rounded-lg p-6 grow">
               andrewchang@utexas.edu
             </button>
@@ -55,7 +58,8 @@ export default function Home() {
               <span>in/andrewlinchang</span>
             </button>
           </div>
-        </div>
+        </section>
+
       </div>
     </main>
   );

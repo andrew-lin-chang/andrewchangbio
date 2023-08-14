@@ -12,6 +12,7 @@ import {
   Git,
   Mongo,
   Raspberry,
+  Firebase
 } from "./Icons";
 
 export default function TechStack() {
@@ -73,6 +74,11 @@ export default function TechStack() {
         <a href="https://www.raspberrypi.com/">
           <Raspberry />
         </a>
+
+        <a href="https://firebase.google.com/">
+          <Firebase />
+        </a>
+
       </div>
 
       <h1 className="font-bold text-xl mt-4">What I'm learning</h1>
