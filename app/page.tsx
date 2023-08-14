@@ -1,6 +1,7 @@
 import Image from "next/image";
 import wetcat from "public/images/wetcat.png";
 import TechStack from "@/components/TechStack";
+import { LinkedIn } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -26,13 +27,35 @@ export default function Home() {
       <TechStack/>
 
       <div className="my-6">
-        <h1 className="font-bold text-3xl">Who?</h1>
-        <p className="mt-2">
-          I'm an Electrical and Computer Engineering student at the University
-          of Texas at Austin. I'm particularly interested in full-stack
-          development, automation, IoT, and the cloud. You can probably find me
-          in the quiet section of the library trying to learn something new!
-        </p>
+        <div className="my-4">
+          <h1 className="font-bold text-3xl">About</h1>
+          <p className="mt-4">
+            I'm an Electrical and Computer Engineering student at the University
+            of Texas at Austin. I'm particularly interested in full-stack
+            development, automation, IoT, and the cloud. You can probably find me
+            in the quiet section of the library trying to learn something new!
+          </p>
+        </div>
+
+        <div className="my-4">
+          <h1 className="font-bold text-3xl">Experience</h1>
+        </div>
+
+        <div className="my-4">
+          <h1 className="font-bold text-3xl">Contact Me</h1>
+          <div className="mt-4 flex flex-col md:flex-row gap-6 w-full">
+            <button className="border rounded-lg p-6 grow">
+              andrewchang@utexas.edu
+            </button>
+            <button className="border rounded-lg p-6 grow">
+              (713) 259-3492
+            </button>
+            <button className="border rounded-lg p-6 dark:fill-white flex gap-4 justify-center grow">
+              <LinkedIn />
+              <span>in/andrewlinchang</span>
+            </button>
+          </div>
+        </div>
       </div>
     </main>
   );
