@@ -8,7 +8,7 @@ import Card from "@/components/Card";
 export interface Project {
   title: string;
   description: string;
-  img: string;
+  imgSrc: string;
   date: string;
 }
 
@@ -40,7 +40,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 gap-4 mt-6">
         {projects.map(project => (
           <Link href={'/projects/' + project.slug} key={project.slug}>
-            <Card title={project.meta.title} description={project.meta.description} img={project.meta.img} date={project.meta.date}/>
+            <Card title={project.meta.title} description={project.meta.description} imgSrc={project.meta.imgSrc} date={project.meta.date}/>
           </Link>
         ))}
       </div>

@@ -187,7 +187,7 @@ export function Node() {
 export function Next() {
   return (
     <svg
-      className="h-8 w-8"
+      className="h-8 w-8 dark:fill-white"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
     >
@@ -199,7 +199,7 @@ export function Next() {
 export function Express() {
   return (
     <svg
-      className="h-8 w-8"
+      className="h-8 w-8 dark:fill-white"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
       viewBox="0 -181.5 512 512"
