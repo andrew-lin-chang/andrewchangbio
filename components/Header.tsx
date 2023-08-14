@@ -4,7 +4,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   return (
-    <div className="flex w-full items-center mt-4 justify-between sticky top-0 left-0 right-0 py-4 opacity-90 bg-white dark:bg-black">
+    <div className="flex w-full items-center mt-4 justify-between sticky top-0 left-0 right-0 py-4 opacity-90 bg-white dark:bg-black z-10">
       <div>
         <Link href="/">
           <h1 className="text-2xl font-bold">{`{ac}`}</h1>
