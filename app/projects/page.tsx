@@ -36,7 +36,7 @@ export default function Projects() {
   return (
     <div>
       <h1 className="font-bold text-4xl">Projects</h1>
-      <p className="">Things I've made in class or in my free time :)</p>
+      <p className="">Things I&apos;ve made in class or in my free time :)</p>
       <div className="grid grid-cols-1 gap-4 mt-6">
         {projects.map((project) => {
           return (

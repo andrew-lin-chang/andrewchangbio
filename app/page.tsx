@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import wetcat from "public/images/wetcat.png";
-import babychang from "public/images/babychang.jpg"
+import babychang from "public/images/babychang.jpg";
 import TechStack from "@/components/TechStack";
 import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
@@ -34,9 +34,9 @@ export default function Home() {
   }, [popupVisible]);
 
   const copyToClipboard = (content: string) => {
-    navigator.clipboard.writeText(content)
-    showPopup()
-  }
+    navigator.clipboard.writeText(content);
+    showPopup();
+  };
 
   return (
     <main>
@@ -66,11 +66,11 @@ export default function Home() {
         <section>
           <h1 className="font-bold text-3xl mb-4">About</h1>
           <p>
-            I'm an Electrical and Computer Engineering student at the University
-            of Texas at Austin. I'm particularly interested in full-stack
-            development, automation, IoT, AI, and the cloud. You can probably find
-            me in the quiet section of the library trying to learn something
-            new!
+            I&apos;m an Electrical and Computer Engineering student at the University
+            of Texas at Austin. I&apos;m particularly interested in full-stack
+            development, automation, IoT, AI, and the cloud. You can probably
+            find me in the quiet section of the library trying to learn
+            something new!
           </p>
         </section>
 
@@ -82,7 +82,10 @@ export default function Home() {
         <section>
           <h1 className="font-bold text-3xl mb-4">Contact Me</h1>
           <div className="flex flex-col md:flex-row gap-6 w-full">
-            <CopyButton content="andrewchang@utexas.edu" onClick={copyToClipboard}>
+            <CopyButton
+              content="andrewchang@utexas.edu"
+              onClick={copyToClipboard}
+            >
               <Gmail />
             </CopyButton>
             <CopyButton content="(713) 259-3492" onClick={copyToClipboard}>
