@@ -1,12 +1,46 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import wetcat from "public/images/wetcat.png";
 import TechStack from "@/components/TechStack";
 import { LinkedIn } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
+import { CopyButton, Popup } from "@/components/Buttons";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [popupVisible, setPopupVisible] = useState(false);
+
+  const showPopup = () => {
+    setPopupVisible(true);
+  };
+
+  const hidePopup = () => {
+    setPopupVisible(false);
+  };
+
+  useEffect(() => {
+    if (popupVisible) {
+      const popupTimeout = setTimeout(() => {
+        hidePopup();
+      }, 2000);
+
+      return () => {
+        clearTimeout(popupTimeout);
+      };
+    }
+  }, [popupVisible]);
+
+  const copyToClipboard = (content: string) => {
+    navigator.clipboard.writeText(content)
+    showPopup()
+  }
+
   return (
     <main>
+      {popupVisible && <Popup />}
+
       <div className="flex-col-reverse flex justify-between items-center text-center md:flex-row md:text-left my-6">
         <div className="mt-4">
           <h2 className="text-sm md:text-lg">Nice to meet you!</h2>
@@ -47,19 +81,17 @@ export default function Home() {
         <section>
           <h1 className="font-bold text-3xl mb-4">Contact Me</h1>
           <div className="flex flex-col md:flex-row gap-6 w-full">
-            <button className="border rounded-lg p-6 grow">
-              andrewchang@utexas.edu
-            </button>
-            <button className="border rounded-lg p-6 grow">
-              (713) 259-3492
-            </button>
-            <button className="border rounded-lg p-6 dark:fill-white flex gap-4 justify-center grow">
+            <CopyButton content="andrewchang@utexas.edu" onClick={copyToClipboard} />
+            <CopyButton content="(713) 259-3492" onClick={copyToClipboard} />
+            <Link
+              href="https://www.linkedin.com/in/andrewlinchang/"
+              className="border rounded-lg p-6 dark:fill-white flex gap-4 justify-center grow"
+            >
               <LinkedIn />
               <span>in/andrewlinchang</span>
-            </button>
+            </Link>
           </div>
         </section>
-
       </div>
     </main>
   );

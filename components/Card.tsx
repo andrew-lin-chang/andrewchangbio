@@ -20,7 +20,7 @@ export default function Card({
             <p className="text-sm text-gray-500">{date}</p>
           </div>
           <p className="text-md">{description}</p>
-          <div className="mt-2 flex gap-4">
+          <div className="mt-4 flex gap-4">
             {repo && (
               <Link href={repo}>
                 <div className="flex gap-2 items-center border p-2 rounded-lg">
