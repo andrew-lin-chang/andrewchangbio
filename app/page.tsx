@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import wetcat from "public/images/wetcat.png";
+import babychang from "public/images/babychang.jpg"
 import TechStack from "@/components/TechStack";
 import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
@@ -51,10 +52,10 @@ export default function Home() {
           <p>University of Texas at Austin</p>
         </div>
         <Image
-          className="rounded-full h-60 w-60"
-          src={wetcat}
-          height={100}
-          width={100}
+          className="rounded-full aspect-square object-cover"
+          src={babychang}
+          height={300}
+          width={300}
           alt="profile picture"
         />
       </div>
