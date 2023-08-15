@@ -38,7 +38,6 @@ export default function Card({
             width={200}
             height={200}
             alt="project thumbnail"
-            objectFit="contain"
           />
         </div>
       </div>

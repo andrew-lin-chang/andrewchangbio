@@ -33,7 +33,7 @@ export default function Post({ params }: any) {
   const props = getPost(params);
 
   return (
-    <article className="prose dark:prose-invert">
+    <article className="prose dark:prose-invert leading-none">
       <h1 className="font-bold text-4xl">{props.frontMatter.title}</h1>
       <div className="mt-6">
         <MDXRemote source={props.content} />

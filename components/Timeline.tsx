@@ -61,7 +61,7 @@ export default function Timeline() {
   return (
     <ol className="relative border-l border-indigo-300 dark:border-indigo-900 [&>*:first-child>div:first-child]:animate-ping">
       {entries.map((entry) => (
-        <TimelineEntry {...entry} />
+        <TimelineEntry key={entry.position} {...entry} />
       ))}
     </ol>
   );
