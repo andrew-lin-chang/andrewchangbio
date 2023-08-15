@@ -68,7 +68,7 @@ export default function Home() {
           <p>
             I'm an Electrical and Computer Engineering student at the University
             of Texas at Austin. I'm particularly interested in full-stack
-            development, automation, IoT, and the cloud. You can probably find
+            development, automation, IoT, AI, and the cloud. You can probably find
             me in the quiet section of the library trying to learn something
             new!
           </p>

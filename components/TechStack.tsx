@@ -12,7 +12,13 @@ import {
   Git,
   Mongo,
   Raspberry,
-  Firebase
+  Firebase,
+  Arduino,
+  AWS,
+  Docker,
+  Pytorch,
+  OpenAI,
+  NPM
 } from "./Icons";
 
 export default function TechStack() {
@@ -59,6 +65,10 @@ export default function TechStack() {
           <Express />
         </a>
 
+        <a href="https://npm.com/">
+          <NPM />
+        </a>
+
         <a href="https://tailwindcss.com/">
           <Tailwind />
         </a>
@@ -79,10 +89,28 @@ export default function TechStack() {
           <Firebase />
         </a>
 
+        <a href="https://www.arduino.cc/">
+          <Arduino />
+        </a>
       </div>
 
-      <h1 className="font-bold text-xl mt-4">What I'm learning</h1>
-      <div className="flex flex-wrap gap-2 mt-2"></div>
+      <h1 className="font-bold text-xl mt-4">
+        What I'm learning/want to learn
+      </h1>
+      <div className="flex flex-wrap gap-2 mt-2">
+        <a href="https://openai.com/">
+          <OpenAI />
+        </a>
+        <a href="https://pytorch.org/">
+          <Pytorch />
+        </a>
+        <a href="https://www.docker.com/">
+          <Docker />
+        </a>
+        <a href="https://aws.amazon.com/">
+          <AWS />
+        </a>
+      </div>
     </>
   );
 }
