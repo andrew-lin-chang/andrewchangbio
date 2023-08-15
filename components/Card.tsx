@@ -12,8 +12,8 @@ export default function Card({
   slug: string;
 }): React.ReactNode {
   return (
-    <div className="flex rounded-lg p-4 border border-gray-400">
-      <div className="flex">
+    <div className="rounded-lg p-4 border border-gray-400">
+      <div className="flex justify-between">
         <div>
           <div className="my-2">
             <Link
