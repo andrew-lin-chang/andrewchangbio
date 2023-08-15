@@ -37,7 +37,7 @@ export function CopyButton({
 export function GitHubRepoButton({repo}: {repo: string}) {
   return (
     <Link href={repo}>
-      <div className="font-bold flex gap-2 items-center border p-2 rounded-lg hover:bg-indigo-500 hover:text-white hover:fill-white">
+      <div className="font-bold flex gap-2 items-center border border-gray-400 p-2 rounded-lg hover:bg-indigo-500 hover:text-white hover:fill-white">
         <GitHub />
         GitHub Repo
       </div>
@@ -47,6 +47,6 @@ export function GitHubRepoButton({repo}: {repo: string}) {
 
 export function Visit({link}: {link: string}) {
   return (
-    <Link href={link} className="font-bold border p-2 rounded-lg hover:bg-indigo-500 hover:text-white">Visit</Link>
+    <Link href={link} className="font-bold border p-2 rounded-lg border-gray-400 hover:bg-indigo-500 hover:text-white">Visit</Link>
   )
 }
