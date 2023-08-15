@@ -18,16 +18,22 @@ const entries = [
       "Enrolled in a self-paced curriculum to learn full-stack development. Created many exercises and projects using web development technologies such as React, Express.js, Mongoose, Node.js.",
   },
   {
-    date: "Spring 2023",
+    date: "Summer 2023",
+    position: "CodePath TIP Course",
+    summary:
+      "Completed CodePath's 10 week Technical Interview Prep Course. Attended weekly lessons to practice technical interview questions and formed connections with fellow students and industry professionals. Received an invitation to CodePath Emerging Engineers Summit 2023",
+  },
+  {
+    date: "Fall 2022",
     position: "Ramshorn Scholars Program Mentor",
     summary:
       "Mentored first-generation college students from underrepresented and marginalized backgrounds. Led makerspace workshops, provided academic tutoring, and created an inclusive community for freshman engineering students.",
   },
   {
-    date: "Fall 2022",
-    position: "Texas Convergent Build Team Lead",
+    date: "Spring 2022",
+    position: "Texas Convergent",
     summary:
-      "Helped organize a semester long",
+      "Participated in a semester-long tech hackathon. Prototyped an IoT device and React Native app to share RFID keys between student apartments. Awarded 1st place out of 150+ competitors and recognized by Austin tech entrepreneurs.",
   },
 ];
 

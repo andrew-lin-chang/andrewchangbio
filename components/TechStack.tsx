@@ -95,7 +95,7 @@ export default function TechStack() {
       </div>
 
       <h1 className="font-bold text-xl mt-4">
-        What I'm learning/want to learn
+        What I&apos;m learning/want to learn
       </h1>
       <div className="flex flex-wrap gap-2 mt-2">
         <a href="https://openai.com/">
