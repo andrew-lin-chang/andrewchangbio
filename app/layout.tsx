@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <Providers attribute="class">
           <Header />
-          <div className="my-6">{children}</div>
+          <div className="my-6 min-h-[75vh]">{children}</div>
           <Footer />
         </Providers>
       </body>

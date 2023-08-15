@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="mb-4">
+    <div className="mb-4 relative left-0 bottom-0">
       <div className="flex justify-center gap-4 my-4">
         <Link href="https://github.com/andrew-lin-chang">
           <GitHub />
