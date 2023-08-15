@@ -44,7 +44,7 @@ export default function Home() {
       <div className="flex-col-reverse flex justify-between items-center text-center md:flex-row md:text-left my-6">
         <div className="mt-4">
           <h2 className="text-sm md:text-lg">Nice to meet you!</h2>
-          <h1 className="font-bold text-3xl tracking-tighter md:text-6xl my-2">
+          <h1 className="font-bold text-3xl tracking-tighter md:text-6xl my-2 text-indigo-500">
             Andrew Chang
           </h1>
           <p>Electrical and Computer Engineering Student</p>
