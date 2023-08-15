@@ -41,7 +41,7 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             // <Link href={"/projects/" + project.slug} key={project.slug}>
-              <Card title={""} description={""} imgSrc={""} date={""} {...project.meta} />
+              <Card meta={project.meta} slug={project.slug}/>
             // </Link>
           );
         })}
