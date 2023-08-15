@@ -40,9 +40,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 gap-4 mt-6">
         {projects.map((project) => {
           return (
-            // <Link href={"/projects/" + project.slug} key={project.slug}>
-              <Card meta={project.meta} slug={project.slug}/>
-            // </Link>
+            <Card meta={project.meta} slug={project.slug} key={project.slug} />
           );
         })}
       </div>

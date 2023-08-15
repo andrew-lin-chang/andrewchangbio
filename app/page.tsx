@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import wetcat from "public/images/wetcat.png";
 import TechStack from "@/components/TechStack";
-import { LinkedIn } from "@/components/Icons";
+import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
 import { CopyButton, Popup } from "@/components/Buttons";
 import { useState, useEffect } from "react";
@@ -81,8 +81,12 @@ export default function Home() {
         <section>
           <h1 className="font-bold text-3xl mb-4">Contact Me</h1>
           <div className="flex flex-col md:flex-row gap-6 w-full">
-            <CopyButton content="andrewchang@utexas.edu" onClick={copyToClipboard} />
-            <CopyButton content="(713) 259-3492" onClick={copyToClipboard} />
+            <CopyButton content="andrewchang@utexas.edu" onClick={copyToClipboard}>
+              <Gmail />
+            </CopyButton>
+            <CopyButton content="(713) 259-3492" onClick={copyToClipboard}>
+              <Phone />
+            </CopyButton>
             <Link
               href="https://www.linkedin.com/in/andrewlinchang/"
               className="border rounded-lg p-6 dark:fill-white flex gap-4 justify-center grow"

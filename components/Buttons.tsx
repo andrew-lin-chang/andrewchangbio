@@ -15,17 +15,20 @@ export function Popup() {
 }
 
 export function CopyButton({
+  children,
   content,
   onClick,
 }: {
+  children: React.ReactNode,
   content: string;
   onClick: (content: string) => any;
 }) {
   return (
     <button
-      className="border rounded-lg p-6 grow"
+      className="flex align-items gap-4 border rounded-lg p-6 grow"
       onClick={() => onClick(content)}
     >
+      {children}
       {content}
     </button>
   );
