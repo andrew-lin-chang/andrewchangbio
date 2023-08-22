@@ -5,12 +5,7 @@ export default function Resume() {
     <div>
       <h1 className="font-bold text-4xl">Resume</h1>
       <p>Feel free to download my resume!</p>
-      <embed
-        src="andrewlinchang_resume.pdf"
-        type="application/pdf"
-        width="100%"
-        className="min-h-screen mt-6"
-      />
+      <iframe className="w-full h-[30rem] sm:h-screen mt-4" src="https://drive.google.com/file/d/1moyqk_2vAEWsrcLEZS8py8Yo3Syc34sp/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
   );
 }
