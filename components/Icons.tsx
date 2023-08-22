@@ -217,7 +217,7 @@ export function Tailwind() {
       fill="none"
       viewBox="0 0 54 33"
     >
-      <g clip-path="url(#a)">
+      <g>
         <path
           fill="#38bdf8"
           fill-rule="evenodd"
