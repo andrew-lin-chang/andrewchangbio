@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import wetcat from "public/images/wetcat.png";
 import babychang from "public/images/babychang.jpg";
-import akihabara from "public/images/akihabara.jpg"
+import pfp from "public/images/pfp.jpg"
 import TechStack from "@/components/TechStack";
 import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <Image
           className="rounded-full aspect-square object-cover"
-          src={akihabara}
+          src={pfp}
           height={300}
           width={300}
           alt="profile picture"
