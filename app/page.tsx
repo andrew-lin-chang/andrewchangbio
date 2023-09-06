@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import wetcat from "public/images/wetcat.png";
 import babychang from "public/images/babychang.jpg";
-import pfp from "public/images/pfp.jpg"
+import pfp from "public/images/pfp.jpg";
 import TechStack from "@/components/TechStack";
 import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
@@ -67,11 +67,16 @@ export default function Home() {
         <section>
           <h1 className="font-bold text-3xl mb-4">About</h1>
           <p>
-            I&apos;m an Electrical and Computer Engineering student at the University
-            of Texas at Austin. I&apos;m particularly interested in full-stack
-            development, automation, IoT, AI, and the cloud. You can probably
-            find me in the quiet section of the library trying to learn
+            I&apos;m an Electrical and Computer Engineering student at the
+            University of Texas at Austin. I&apos;m particularly interested in
+            full-stack development, automation, IoT, AI, and the cloud. You can
+            probably find me in the quiet section of the library trying to learn
             something new!
+          </p>
+          <p className="mt-4">
+            Outside of class I like reading sci-fi and philosophy books,
+            watching YouTube video essays, anime, pressure cookers,
+            teaching others, and trying new things.
           </p>
         </section>
 
