@@ -8,7 +8,7 @@ export function copyToClipboard(text: string) {
 
 export function Popup() {
   return (
-    <div className="flex rounded-full text-white bg-indigo-500 uppercase px-2 py-1 text-xs font-bold w-fit sticky top-20 mx-auto">
+    <div className="flex rounded-full text-white bg-indigo-500 uppercase px-2 py-1 text-xs font-bold w-fit sticky top-20 mx-auto z-50">
       COPIED TO CLIPBOARD!
     </div>
   );
@@ -25,7 +25,7 @@ export function CopyButton({
 }) {
   return (
     <button
-      className="flex align-items gap-4 border rounded-lg p-6 grow"
+      className="flex justify-center align-items gap-4 border rounded-lg p-6 grow"
       onClick={() => onClick(content)}
     >
       {children}
