@@ -18,7 +18,8 @@ import {
   Docker,
   Pytorch,
   OpenAI,
-  NPM
+  NPM,
+  Kubernetes
 } from "./Icons";
 
 export default function TechStack() {
@@ -109,6 +110,9 @@ export default function TechStack() {
         </a>
         <a href="https://aws.amazon.com/">
           <AWS />
+        </a>
+        <a href="https://kubernetes.io/">
+          <Kubernetes />
         </a>
       </div>
     </>
