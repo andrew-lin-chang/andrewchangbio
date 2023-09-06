@@ -21,7 +21,7 @@ const entries = [
     date: "Summer 2023",
     position: "CodePath TIP Course",
     summary:
-      "Completed CodePath's 10 week Technical Interview Prep Course. Attended weekly lessons to practice technical interview questions and formed connections with fellow students and industry professionals. Received an invitation to CodePath Emerging Engineers Summit 2023",
+      "Completed CodePath's 10 week Technical Interview Prep Course. Attended weekly lessons to practice technical interview questions and formed connections with fellow students and industry professionals. Received an invitation to CodePath Emerging Engineers Summit 2023.",
   },
   {
     date: "Fall 2022",
