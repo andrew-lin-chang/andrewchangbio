@@ -70,14 +70,12 @@ export default function Home() {
           <p>
             I&apos;m an Electrical and Computer Engineering student at the
             University of Texas at Austin. I&apos;m particularly interested in
-            full-stack development, automation, IoT, AI, and the cloud. You can
+            data science, IoT, machine learning, and the cloud. You can
             probably find me in the quiet section of the library trying to learn
-            something new!
+            something new.
           </p>
           <p className="mt-4">
-            Outside of class I like reading sci-fi and philosophy books,
-            watching YouTube video essays, anime, pressure cookers,
-            teaching others, and trying new things.
+            Outside of class I like reading long books, watching YouTube video essays, cooking, building computers, running long distances, and listening to questionable music.
           </p>
         </section>
 
