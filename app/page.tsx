@@ -10,6 +10,7 @@ import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
 import { CopyButton, Popup } from "@/components/Buttons";
 import { useState, useEffect } from "react";
+import LinkedInBadge from "@/components/LinkedInBadge";
 
 export default function Home() {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -106,6 +107,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <LinkedInBadge />
       </div>
     </main>
   );
