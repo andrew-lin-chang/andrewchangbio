@@ -1,5 +1,17 @@
 const entries = [
   {
+    date: "Fall 2024",
+    position: "AMD",
+    summary:
+      "Systems Design Co-op/Intern",
+  },
+  {
+    date: "Summer 2024",
+    position: "Hewlett Packard Enterprise",
+    summary:
+      "High-Performance Compute and AI Firmware Engineering Intern",
+  },
+  {
     date: "Fall 2023",
     position: "IEEE UT President",
     summary:

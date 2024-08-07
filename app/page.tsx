@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import wetcat from "public/images/wetcat.png";
-import babychang from "public/images/babychang.jpg";
-import pfp from "public/images/pfp.jpg";
+import pfp from "@/public/images/pfp.jpg";
 import TechStack from "@/components/TechStack";
 import { Gmail, LinkedIn, Phone } from "@/components/Icons";
 import Timeline from "@/components/Timeline";
@@ -70,12 +68,13 @@ export default function Home() {
           <p>
             I&apos;m an Electrical and Computer Engineering student at the
             University of Texas at Austin. I&apos;m particularly interested in
-            data science, IoT, machine learning, and the cloud. You can
-            probably find me in the quiet section of the library trying to learn
-            something new.
+            machine learning, embedded systems, data science, and cloud
+            computing. I am passionate about repairability, DIY projects, and
+            learning new things.
           </p>
           <p className="mt-4">
-            Outside of class I like reading long books, watching YouTube video essays, cooking, building computers, running long distances, and listening to questionable music.
+            Outside of class I like reading books, building computers, repairing
+            broken things, and listening to questionable music.
           </p>
         </section>
 
